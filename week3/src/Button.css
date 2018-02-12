@@ -1,0 +1,19 @@
+.button {
+    background: #FFF;
+    border: 1px solid #076d6d;
+    color: #076d6d;
+    height: 100%;
+    font-size:18px;
+    width: 200px;
+    height: 60px;
+}
+
+    .button-active {
+        background: #00adad;
+        color:#FFF;
+    }
+
+.button:hover {
+    background: #30cfcf;
+    color: #FFF;
+}
