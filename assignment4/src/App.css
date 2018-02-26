@@ -1,0 +1,15 @@
+#container {
+    margin: 16px;
+    font-family:Helvetica;
+}
+
+#poster{
+    margin: 0;
+}
+
+#fields {
+    float:left;
+    position:relative;
+    margin:0 40px 0 0;
+    width:345px;
+}
