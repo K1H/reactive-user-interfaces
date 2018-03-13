@@ -1,0 +1,51 @@
+.HomePage {
+font: helvetica;
+}
+div.controls{
+  text-align: right;
+  padding: 1%;
+  margin: 1%;
+}
+.sorting {
+    position: relative;
+    display: inline-block;
+}
+.filtering{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    background-color: #800000;
+    color: white;
+    border: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content :hover {background-color: #ddd}
+.sorting:hover .dropdown-content {
+    display: block;
+}
+.filtering:hover .dropdown-content {
+    display: block;
+}
+.sorting:hover .dropbtn {
+    background-color: #600000;
+}
+.filtering:hover .dropbtn {
+    background-color: #600000;
+}
+div.contacts{
+text-align: left;
+
+  padding: 2%;
+  margin: 2%;
+  font-size: 75%
+}
+div{
+padding: 2%;
+}
