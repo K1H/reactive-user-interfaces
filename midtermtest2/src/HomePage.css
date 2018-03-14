@@ -1,12 +1,13 @@
 .HomePage {
 background-color: white;
 height: 1024px;
-
+}
+div{
+padding: 2%;
 }
 div.controls{
   text-align: center;
   font-family: 'Fjalla One', sans-serif,monospace;
-
 }
 input{
   width:60%;
@@ -62,10 +63,6 @@ div.contacts{
   text-align: left;
   padding: 0;
 }
-div{
-padding: 2%;
-}
-
 .solo{
 border-bottom: 1px solid #afafaf;
 }
