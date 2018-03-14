@@ -15,6 +15,7 @@ class App extends Component {
           email: 'k@nyu.edu',
           nickname: 'K',
           country: 'Nowhere',
+          phone: '+1 234 567 8910',
           id: 1
         },
         {
@@ -23,6 +24,7 @@ class App extends Component {
           email: 'Noneofyourbusiness@no.com',
           nickname: 'Lama',
           country: 'Nowhere',
+          phone: '+2 234 567 8910',
           id: 2
         },
         {
@@ -31,6 +33,7 @@ class App extends Component {
           email: 'Nacholibre@ja.com',
           nickname: 'Dipstick',
           country: 'Nowhere',
+          phone: '+3 234 567 8910',
           id: 3
         },
         {
@@ -39,6 +42,7 @@ class App extends Component {
           email: 'computernocomprende@no.no',
           nickname: 'Ogre',
           country: 'Nowhere',
+          phone: '+4 234 567 8910',
           id: 4
         },
         {
@@ -47,6 +51,7 @@ class App extends Component {
           email: 'noclue1337@nyu.edu',
           nickname: 'Ron',
           country: 'Nowhere',
+          phone: '+5 234 567 8910',
           id: 5
         },
         {
@@ -55,6 +60,7 @@ class App extends Component {
           email: 'BoCofounder@mew.co',
           nickname: 'Fake',
           country: 'Denmark',
+          phone: '+6 234 567 8910',
           id: 6
         },
         {
@@ -63,6 +69,7 @@ class App extends Component {
           email: 'silenceis@virus.tehe',
           nickname: 'Pro-f',
           country: 'Nowhere',
+          phone: '+7 234 567 8910',
           id: 7
         },
         {
@@ -71,6 +78,7 @@ class App extends Component {
           email: 'smilie@you.yes',
           nickname: 'Joker',
           country: 'Russia',
+          phone: '+8 234 567 8910',
           id: 8
         },
         {
@@ -79,6 +87,7 @@ class App extends Component {
           email: 'childishhumor@me.us',
           nickname: 'Badjoke',
           country: 'Turkey',
+          phone: '+9 234 567 8910',
           id: 9
         },
         {
@@ -87,6 +96,7 @@ class App extends Component {
           email: 'Normal@person.com',
           nickname: 'nick',
           country: 'United States of America',
+          phone: '+0 234 567 8910',
           id: 10 }
       ]
     };

@@ -12,6 +12,7 @@ class ContactPage extends Component {
         <p>Email: {this.props.contact.email}</p>
         <p>Nickname: {this.props.contact.nickname}</p>
         <p>Country: {this.props.contact.country}</p>
+        <p>Country: {this.props.contact.phone}</p>
         <Link to="/">Back to Contact List</Link>
       </div>
     );

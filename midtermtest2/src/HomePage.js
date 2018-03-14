@@ -46,7 +46,8 @@ filterCountry(f) {
            contact.first.toLowerCase().match(this.state.search)  ||
            contact.last.toLowerCase().match(this.state.search) ||
            contact.email.toLowerCase().match(this.state.search) ||
-           contact.nickname.toLowerCase().match(this.state.search)
+           contact.nickname.toLowerCase().match(this.state.search) ||
+           contact.phone.toLowerCase().match(this.state.search) 
          );
      }
     if (this.state.sort === 'nameUP') {
