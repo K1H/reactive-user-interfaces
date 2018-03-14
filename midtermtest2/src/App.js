@@ -93,9 +93,16 @@ class App extends Component {
   }
 
   render() {
+
     return (
+
       <Router>
         <div className="App">
+
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+        </style>
+
           <Route exact path="/" component={props => {
             return <HomePage ContactInformation={this.state.ContactInformation} />;
             }}

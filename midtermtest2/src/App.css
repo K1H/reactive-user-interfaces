@@ -1,3 +1,13 @@
 .App {
+  background-color: white;
+  font-family: 'Fjalla One', sans-serif,monospace;
+  font-size: 150%;
 
+}
+div#root{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
 }

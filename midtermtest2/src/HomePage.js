@@ -68,7 +68,11 @@ filterCountry(f) {
 
 
     const tags = changedContact.map((contact, i) => {
-        return <Link to = {/Contact/ + contact.id}><div key={i}>{contact.first} {contact.last} </div></Link>;
+        return (
+          <div className="solo">
+          <Link to = {/Contact/ + contact.id}><div key={i}>{contact.first} {contact.last} </div></Link>
+          </div>
+      );
       });
 
     return <div className="HomePage">
@@ -76,17 +80,17 @@ filterCountry(f) {
 
         <input type="text" placeholder="Search" onChange={this.onSearch} />
 
-            <div class="sorting">
-              <button class="dropbtn">Sort</button>
-               <div class="dropdown-content">
+            <div className="sorting">
+              <button className="dropbtn">Sort</button>
+               <div className="dropdown-content">
                    <button onClick={this.sortByNameUp}>Sort by First Name</button>
                    <button onClick={this.sortByNameDown}>Sort by Last Name</button>
                 </div>
               </div>
 
-              <div class="filtering">
-                <button class="dropbtn">Filter</button>
-                 <div class="dropdown-content">
+              <div className="filtering">
+                <button className="dropbtn">Filter</button>
+                 <div className="dropdown-content">
                     <input type="text" placeholder="Country" onChange={this.filterCountry} />
                   </div>
                 </div>
