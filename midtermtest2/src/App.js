@@ -7,6 +7,8 @@ import ContactPage from './ContactPage';
 class App extends Component {
   constructor(props) {
     super(props);
+
+    this.onNewContact = this.onNewContact.bind(this);
     this.state = {
       ContactInformation: [
         {
@@ -56,7 +58,7 @@ class App extends Component {
         },
         {
           first: 'Rune',
-          last: 'Madsen',
+          last: 'Madson',
           email: 'BoCofounder@mew.co',
           nickname: 'Fake',
           country: 'Denmark',
@@ -101,9 +103,22 @@ class App extends Component {
       ]
     };
   }
+onNewContact(first,last,email,nickname,country,phone) {
+    const copy = this.state.ContactInformation.slice();
+    copy.push({
+      first: '',
+      last: '',
+      email: '',
+      nickname: '',
+      country: '',
+      phone: ''
+    });
+    this.setState({
+      ContactInformation: copy
+    });
+  }
 
-  render() {
-
+render() {
     return (
 
       <Router>
@@ -127,6 +142,7 @@ class App extends Component {
           />
         </div>
       </Router>
+
     );
   }
 }

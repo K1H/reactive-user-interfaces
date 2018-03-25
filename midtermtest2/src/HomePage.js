@@ -12,7 +12,21 @@ constructor(props) {
    this.sortByNameDown = this.sortByNameDown.bind(this);
    this.filterCountry = this.filterCountry.bind(this);
 
+   this.FirstChanged = this.FirstChanged.bind(this);
+   this.LastChanged = this.LastChanged.bind(this);
+   this.emailChanged = this.emailChanged.bind(this);
+   this.nicknameChanged = this.nicknameChanged.bind(this);
+   this.countryChanged = this.countryChanged.bind(this);
+   this.phoneChanged = this.phoneChanged.bind(this);
+   this.buttonClicked = this.buttonClicked.bind(this);
+
    this.state = {
+     first: '',
+     last: '',
+     email: '',
+     nickname: '',
+     country: '',
+     phone: '',
      search: '',
      filter: ''
    };
@@ -37,6 +51,51 @@ filterCountry(f) {
       filter: f.target.value.toLowerCase()
     });
 }
+
+FirstChanged(e) {
+    this.setState({
+      first: e.target.value
+    });
+  }
+LastChanged(e) {
+      this.setState({
+        last: e.target.value
+      });
+  }
+emailChanged(e) {
+    this.setState({
+      email: e.target.value
+    });
+  }
+nicknameChanged(e){
+    this.setState({
+      nickname: e.target.value
+    });
+  }
+countryChanged(e){
+    this.setState({
+      country: e.target.value
+    });
+  }
+phoneChanged(e){
+      this.setState({
+        phone: e.target.value
+      });
+    }
+
+buttonClicked() {
+    this.props.onSubmit(this.state.first, this.state.last, this.state.nickname, this.state.country, this.state.phone, this.state.email, );
+    this.setState({
+      first: '',
+      last: '',
+      email: '',
+      nickname: '',
+      country: '',
+      phone: ''
+    });
+  }
+
+
   render() {
 
     let changedContact = this.props.ContactInformation.slice();
@@ -47,7 +106,7 @@ filterCountry(f) {
            contact.last.toLowerCase().match(this.state.search) ||
            contact.email.toLowerCase().match(this.state.search) ||
            contact.nickname.toLowerCase().match(this.state.search) ||
-           contact.phone.toLowerCase().match(this.state.search) 
+           contact.phone.toLowerCase().match(this.state.search)
          );
      }
     if (this.state.sort === 'nameUP') {
@@ -92,7 +151,7 @@ filterCountry(f) {
               <div className="filtering">
                 <button className="dropbtn">Filter</button>
                  <div className="dropdown-content">
-                    <input type="text" placeholder="Country" onChange={this.filterCountry} />
+                    <input type="text" placeholder="" onChange={this.filter} />
                   </div>
                 </div>
       </div>
@@ -100,6 +159,19 @@ filterCountry(f) {
       <div className="contacts">
        {tags}
      </div>
+
+     <div className="Adding">
+       <button className="dropbtn">Add Contact</button>
+          <div className="dropdown-content">
+              <input type="text" placeholder="first name" onChange={this.FirstChanged} />
+              <input type="text" placeholder="last name" onChange={this.LastChanged} />
+              <input type="text" placeholder="Email Address" onChange={this.emailChanged} />
+              <input type="text" placeholder="Nickname" onChange={this.nicknameChanged} />
+              <input type="text" placeholder="Country" onChange={this.countryChanged} />
+              <input type="number" placeholder="phone" onChange={this.phoneChanged} />
+              <button onClick={this.buttonClicked}>Add</button>
+           </div>
+       </div>
 
     </div>;
   }
