@@ -1,0 +1,51 @@
+/* for flex box
+header {
+  text-align: center;
+  background-color: orange;
+}
+.mainLayout{
+  display: flex;
+}
+
+aside{
+  background-color: blue;
+  flex: 0 0 200px;
+  display: none;
+}
+main{
+  background-color: pink;
+  flex: 1;
+
+}
+@media(min-width:600px){
+  aside{
+    display: block;
+  }
+
+} */
+.mainLayout{
+  display:grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 50px auto 50px;
+  min-height: 100vh;
+}
+aside{
+  background-color: pink;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+main{
+  background-color: gray;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+blue{
+  background-color: yellow;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+header{
+  background-color: black;
+  text-align: center;
+  color: white;
+}

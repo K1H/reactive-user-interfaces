@@ -1,0 +1,52 @@
+
+.App {
+  padding:20px;
+
+}
+.Button{
+  width:30%;
+  height:10%;
+  text-align: center;
+}
+
+.box {
+  text-align: center;
+  width: 500px;
+  height:100px;
+  margin-top: 20px;
+  background-color:gray;
+  padding: 70px;
+  border-radius: 25px;
+}
+
+@keyframes showBox {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  25% {
+    width: 10px;
+    background-color: black;
+    height: 10px;
+  }
+  75% {
+    width:600px;
+    height:110px;
+
+  }
+  100%{
+    width:500px;
+    height:100px;
+  }
+}
+
+.box-enter {
+  animation-name: showBox;
+  animation-duration: 0.5s;
+}
+
+.box-exit {
+  animation-name: showBox;
+  animation-direction: reverse;
+  animation-duration: 0.5s;
+}
