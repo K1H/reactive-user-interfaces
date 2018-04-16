@@ -1,0 +1,18 @@
+.NavigationBar {
+
+  text-align: center;
+  padding: 20px;
+}
+
+.LogoButton{
+  width: 5%;
+  height: 5%;
+  outline: none;
+  background-color: none;
+
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
