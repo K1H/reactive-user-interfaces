@@ -1,0 +1,26 @@
+.Button {
+  border: none;
+  background-color: none;
+  outline: none;
+  border-radius: 100px;
+}
+
+@keyframes turning {
+  0% {
+    background-color: #e1e1e1;
+    color: #424242;
+  }
+  50% {
+    background-color: #e45151;
+    color: white;
+  }
+  100% {
+    color: #424242;
+    transform: rotate(-90deg);
+  }
+}
+
+.animate {
+  animation-name: turning;
+  animation-duration: 1s;
+}

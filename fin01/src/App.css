@@ -1,0 +1,70 @@
+.App {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 150px auto 50px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.NavigationBar {
+  display: flex;
+  flex-direction: column;
+  width:90%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  background-color: none;
+  justify-self: center;
+}
+.extension{
+  justify-self: center;
+  align-self: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+}
+
+img.logo{
+  transform: rotate(90deg);
+  width: 100px;
+  height:100px;
+}
+
+.box {
+  width: 90%;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-content: space-around;
+}
+
+.Projects{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.Footer{
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+
+
+@keyframes showBox {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.box-enter {
+  animation-name: showBox;
+  animation-duration: 0.5s;
+}
+
+.box-exit {
+  animation-name: showBox;
+  animation-direction: reverse;
+  animation-duration: 0.5s;
+}

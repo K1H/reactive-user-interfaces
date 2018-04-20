@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { CSSTransition } from "react-transition-group";
+
 import './App.css';
 
 class App extends Component {
 
 constructor(props) {
    super(props);
-   this.clicked = this.clicked.bind(this);
-   this.reset = this.reset.bind(this);
+   this.toggleBox = this.toggleBox.bind(this);
+
    this.state = {
-    animating: false,
+     showBox: false,
      projectsList: [
        { title: 'First', id: 1 },
        { title: 'Second', id: 2 },
@@ -19,17 +20,11 @@ constructor(props) {
    };
  }
 
- clicked() {
-    this.setState({
-      animating: true
-    });
-  }
-
-  reset() {
-    this.setState({
-      animating: false
-    });
-  }
+ toggleBox() {
+  this.setState({
+    showBox: !this.state.showBox
+  });
+}
 
   render() {
     return (
@@ -37,9 +32,18 @@ constructor(props) {
         <div className="App">
 
              <div className="NavigationBar">
-               <button className = "LogoButton" onClick={this.rotatedown}>
+               <button className = "Buttons" onClick={this.toggleBox}>
                <img src= "18khlogo800x800.png"/>
                </button>
+
+               <CSSTransition
+              in={this.state.showBox}
+              timeout={300}
+              classNames="box"
+              unmountOnExit
+              >
+              <div className="box">Hello!</div>
+              </CSSTransition>
 
                <button>Projects</button>
                <button>About Me</button>

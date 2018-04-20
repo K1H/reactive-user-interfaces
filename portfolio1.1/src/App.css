@@ -1,18 +1,20 @@
+.App{
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  grid-template-rows: 20% auto 20%;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
 .NavigationBar {
-
-  text-align: center;
-  padding: 20px;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
 }
 
-.LogoButton{
-  width: 5%;
-  height: 5%;
-  outline: none;
+button{
   background-color: none;
-
 }
-
 img{
-  width: 100%;
-  height: 100%;
+  width: 10%;
+  height: 10%;
 }

@@ -1,0 +1,24 @@
+.Button {
+  padding: 20px;
+  border: none;
+  background-color: red;
+  font-size: 20px;
+  outline: none;
+}
+
+@keyframes Rotate {
+  0% {
+    transform: rotate();
+  }
+  50% {
+
+  }
+  100% {
+    transform: rotate(90);
+  }
+}
+
+.animate {
+  animation-name: Rotate 90;
+  animation-duration: .5s;
+}
