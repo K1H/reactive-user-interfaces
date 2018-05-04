@@ -1,0 +1,69 @@
+.Projects{
+
+}
+
+.Project_1 {
+text-align: center;
+padding:10px;
+margin-bottom: 10px;
+background-image: url("/images/modelingbackground.jpg");
+color: white;
+
+}
+.Project_1 h1{
+  text-align: center;
+}
+
+.Project_2{
+text-align: right;
+padding:10px;
+margin-bottom: 10px;
+background-image: url("/images/designback.jpg");
+color: white;
+}
+.Project_2 h1{
+  text-align: right;
+}
+
+.Project_3{
+text-align: left;
+padding:10px;
+margin-bottom: 10px;
+background-image: url("/images/horse.jpg");
+}
+.Project_3 h1{
+  text-align: left;
+}
+
+.Project_4{
+text-align: center;
+padding:10px;
+margin-bottom: 10px;
+background-image: url("/images/Amster.jpg");
+color: white;
+}
+.Project_4 h1{
+  text-align: center;
+}
+
+.Project_5{
+text-align: right;
+padding:10px;
+margin-bottom: 10px;
+background-image: url("/images/clouds.jpg");
+color: white;
+}
+.Project_5 h1{
+  text-align: right;
+}
+
+.Project_6{
+padding:10px;
+margin-bottom: 10px;
+text-align: left;
+background-image: url("/images/coverpic.jpg");
+color: white;
+}
+.Project_6 h1{
+  text-align: left;
+}

@@ -1,10 +1,10 @@
 .App {
+  font-family: 'Oswald', sans-serif;
   display: grid;
-  grid-template-columns: 150px auto 150px;
+  grid-template-columns: 200px auto 200px;
   grid-template-rows: 150px auto 50px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  text-align: center;
   min-height: 100vh;
 }
 
@@ -17,12 +17,10 @@
   background-color: none;
   justify-self: center;
 }
+
 .extension{
   justify-self: center;
   align-self: center;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-
 }
 
 img.logo{
@@ -39,6 +37,7 @@ img.logo{
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   justify-content: space-around;
+  font-size: 1.5em;
 }
 
 .Projects{
@@ -47,11 +46,38 @@ img.logo{
 }
 
 .Footer{
+  display: flex;
+  flex-direction: row;
+  align-self:center;
+  justify-content: center;
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
 
+.Games{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
 
+a{
+    background-color:none;
+    color: black;
+    padding: 13px;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:focus, a:active{
+  text-decoration: line-through;
+}
+
+a:hover, a:active {
+  text-decoration: line-through;
+}
 
 @keyframes showBox {
     grid-column: 2 / 3;
@@ -67,4 +93,67 @@ img.logo{
   animation-name: showBox;
   animation-direction: reverse;
   animation-duration: 0.5s;
+}
+
+@keyframes showfunBox {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.box-enter {
+  animation-name: showfunBox;
+  animation-duration: 0.5s;
+}
+
+.box-exit {
+  animation-name: showfunBox;
+  animation-direction: reverse;
+  animation-duration: 0.5s;
+}
+.funbox{
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.funbutton {
+  justify-self: center;
+  align-self: center;
+}
+
+@keyframes socialMedia {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+
+}
+.box-enter {
+  animation-name: socialMedia;
+  animation-duration: 0.5s;
+}
+
+.box-exit {
+  animation-name: socialMedia;
+  animation-direction: reverse;
+  animation-duration: 0.5s;
+}
+
+.socialMedia{
+  display: flex;
+  justify-content:flex-end;
+  flex-direction: row;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.icon{
+  width:100%;
+  height: 100%;
+}
+
+.button1{
+  border: none;
+  background-color: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
 }

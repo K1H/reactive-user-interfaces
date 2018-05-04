@@ -1,0 +1,14 @@
+.AboutMe{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.Aboutmepic{
+  width: 75%;
+  height: 65%;
+  max-height:800px;
+  max-width: 1100px;
+  align-self: center;
+}

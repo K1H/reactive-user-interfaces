@@ -14,7 +14,7 @@ class Buttons extends Component {
 
   clicked() {
     this.setState({
-      animating: true
+      animating: !this.state.animating
     });
     this.props.onClick();
   }
